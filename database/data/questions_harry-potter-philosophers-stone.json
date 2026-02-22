@@ -1,0 +1,158 @@
+[
+    {
+        "prompt": "What is the name of Harry Potter's school?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Hogwarts School of Witchcraft and Wizardry is where Harry learns magic.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Hogwarts", "is_correct": true},
+            {"label": "B", "text": "Beauxbatons", "is_correct": false},
+            {"label": "C", "text": "Durmstrang", "is_correct": false},
+            {"label": "D", "text": "Ilvermorny", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What house is Harry sorted into?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "The Sorting Hat places Harry in Gryffindor, known for bravery and courage.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Slytherin", "is_correct": false},
+            {"label": "B", "text": "Gryffindor", "is_correct": true},
+            {"label": "C", "text": "Ravenclaw", "is_correct": false},
+            {"label": "D", "text": "Hufflepuff", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Harry's position on the Quidditch team?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Harry becomes the youngest Seeker in a century for the Gryffindor Quidditch team.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Keeper", "is_correct": false},
+            {"label": "B", "text": "Chaser", "is_correct": false},
+            {"label": "C", "text": "Seeker", "is_correct": true},
+            {"label": "D", "text": "Beater", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of Harry's pet owl?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Hedwig is Harry's snowy owl, a birthday gift from Hagrid.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Hedwig", "is_correct": true},
+            {"label": "B", "text": "Errol", "is_correct": false},
+            {"label": "C", "text": "Pigwidgeon", "is_correct": false},
+            {"label": "D", "text": "Scabbers", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Who are Harry's two best friends?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Ron Weasley and Hermione Granger become Harry's closest friends at Hogwarts.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Ron and Hermione", "is_correct": true},
+            {"label": "B", "text": "Draco and Neville", "is_correct": false},
+            {"label": "C", "text": "Fred and George", "is_correct": false},
+            {"label": "D", "text": "Dean and Seamus", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What platform does the Hogwarts Express leave from?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "The Hogwarts Express departs from the hidden Platform 9 3/4 at King's Cross Station.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Platform 7", "is_correct": false},
+            {"label": "B", "text": "Platform 9 3/4", "is_correct": true},
+            {"label": "C", "text": "Platform 10", "is_correct": false},
+            {"label": "D", "text": "Platform 8 1/2", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does the Mirror of Erised show?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "The Mirror of Erised shows the viewer their deepest desire. Harry sees his family.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "The future", "is_correct": false},
+            {"label": "B", "text": "Your deepest desire", "is_correct": true},
+            {"label": "C", "text": "The past", "is_correct": false},
+            {"label": "D", "text": "Your worst fear", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Who is the gamekeeper at Hogwarts who tells Harry he's a wizard?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Rubeus Hagrid delivers Harry's Hogwarts letter and reveals he is a wizard.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Dumbledore", "is_correct": false},
+            {"label": "B", "text": "Hagrid", "is_correct": true},
+            {"label": "C", "text": "Snape", "is_correct": false},
+            {"label": "D", "text": "McGonagall", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What three-headed dog guards the trapdoor?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Fluffy is Hagrid's three-headed dog that guards the trapdoor to the Philosopher's Stone.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Fang", "is_correct": false},
+            {"label": "B", "text": "Fluffy", "is_correct": true},
+            {"label": "C", "text": "Norbert", "is_correct": false},
+            {"label": "D", "text": "Buckbeak", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does the Philosopher's Stone produce?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "The Philosopher's Stone can turn any metal into gold and produce the Elixir of Life.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Invisibility", "is_correct": false},
+            {"label": "B", "text": "The Elixir of Life", "is_correct": true},
+            {"label": "C", "text": "Time travel", "is_correct": false},
+            {"label": "D", "text": "Unlimited magic power", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What shape is the scar on Harry's forehead?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Harry has a lightning bolt-shaped scar from Voldemort's failed killing curse.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A star", "is_correct": false},
+            {"label": "B", "text": "A lightning bolt", "is_correct": true},
+            {"label": "C", "text": "A crescent moon", "is_correct": false},
+            {"label": "D", "text": "A circle", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Where do Harry's aunt and uncle make him sleep?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "The Dursleys make Harry sleep in the cupboard under the stairs at 4 Privet Drive.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "The attic", "is_correct": false},
+            {"label": "B", "text": "The cupboard under the stairs", "is_correct": true},
+            {"label": "C", "text": "The garage", "is_correct": false},
+            {"label": "D", "text": "The basement", "is_correct": false}
+        ]
+    }
+]

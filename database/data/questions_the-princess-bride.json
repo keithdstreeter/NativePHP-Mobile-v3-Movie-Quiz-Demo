@@ -1,0 +1,158 @@
+[
+    {
+        "prompt": "What is the famous line Westley says to Buttercup?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Westley says 'As you wish' to Buttercup, which really means 'I love you.'",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "As you wish", "is_correct": true},
+            {"label": "B", "text": "I love you", "is_correct": false},
+            {"label": "C", "text": "Forever yours", "is_correct": false},
+            {"label": "D", "text": "My princess", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the giant who works for Vizzini?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Fezzik is the gentle giant played by André the Giant who works alongside Vizzini and Inigo Montoya.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Goliath", "is_correct": false},
+            {"label": "B", "text": "Fezzik", "is_correct": true},
+            {"label": "C", "text": "Humperdinck", "is_correct": false},
+            {"label": "D", "text": "Rugen", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does Inigo Montoya say to the six-fingered man?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Inigo's famous line is 'Hello, my name is Inigo Montoya. You killed my father. Prepare to die.'",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Hello, my name is Inigo Montoya. You killed my father. Prepare to die.", "is_correct": true},
+            {"label": "B", "text": "I challenge you to a duel.", "is_correct": false},
+            {"label": "C", "text": "You will pay for what you did.", "is_correct": false},
+            {"label": "D", "text": "My father sends his regards.", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the evil prince who wants to marry Buttercup?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Prince Humperdinck is the villain who plans to marry Buttercup as part of his scheme to start a war.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Prince Charming", "is_correct": false},
+            {"label": "B", "text": "Prince Humperdinck", "is_correct": true},
+            {"label": "C", "text": "Prince Rugen", "is_correct": false},
+            {"label": "D", "text": "Prince Vizzini", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Westley's disguise when he first rescues Buttercup?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Westley disguises himself as the Dread Pirate Roberts, a feared pirate of the seas.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "The Dread Pirate Roberts", "is_correct": true},
+            {"label": "B", "text": "The Man in Black", "is_correct": false},
+            {"label": "C", "text": "A mysterious knight", "is_correct": false},
+            {"label": "D", "text": "A traveling merchant", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What dangerous place do Westley and Buttercup enter while fleeing?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "They enter the Fire Swamp, which contains flame spurts, lightning sand, and R.O.U.S.es.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "The Fire Swamp", "is_correct": true},
+            {"label": "B", "text": "The Dark Forest", "is_correct": false},
+            {"label": "C", "text": "The Pit of Despair", "is_correct": false},
+            {"label": "D", "text": "The Cliffs of Insanity", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does R.O.U.S. stand for?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "R.O.U.S. stands for Rodents Of Unusual Size, the giant rats that live in the Fire Swamp.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Rodents Of Unusual Size", "is_correct": true},
+            {"label": "B", "text": "Rangers Of Unlikely Strength", "is_correct": false},
+            {"label": "C", "text": "Reptiles Of Underground Swamps", "is_correct": false},
+            {"label": "D", "text": "Rulers Of Underworld Seas", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What word does Vizzini keep repeating?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Vizzini repeatedly says 'Inconceivable!' throughout the film, even when events are clearly happening.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Inconceivable!", "is_correct": true},
+            {"label": "B", "text": "Impossible!", "is_correct": false},
+            {"label": "C", "text": "Unbelievable!", "is_correct": false},
+            {"label": "D", "text": "Extraordinary!", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "How does Westley defeat Vizzini?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Westley challenges Vizzini to a battle of wits using poisoned wine — both cups contained poison, but Westley had built up an immunity.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A battle of wits with poisoned wine", "is_correct": true},
+            {"label": "B", "text": "A sword fight", "is_correct": false},
+            {"label": "C", "text": "A wrestling match", "is_correct": false},
+            {"label": "D", "text": "A chess game", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does Miracle Max say Westley is?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Miracle Max declares that Westley is only 'mostly dead,' which means he's 'slightly alive.'",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Mostly dead", "is_correct": true},
+            {"label": "B", "text": "Completely dead", "is_correct": false},
+            {"label": "C", "text": "Sleeping deeply", "is_correct": false},
+            {"label": "D", "text": "Under a spell", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Who is telling the story of The Princess Bride?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "A grandfather reads the story to his sick grandson, framing the entire movie.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A grandfather to his grandson", "is_correct": true},
+            {"label": "B", "text": "Buttercup to her children", "is_correct": false},
+            {"label": "C", "text": "A wizard to his students", "is_correct": false},
+            {"label": "D", "text": "Inigo Montoya to his friends", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What do Westley and Inigo Montoya fight on at the Cliffs of Insanity?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "They have an impressive sword fight at the top of the Cliffs of Insanity, considered one of the best movie sword fights.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "The top of the cliffs with swords", "is_correct": true},
+            {"label": "B", "text": "A rope bridge", "is_correct": false},
+            {"label": "C", "text": "A castle rooftop", "is_correct": false},
+            {"label": "D", "text": "A pirate ship", "is_correct": false}
+        ]
+    }
+]

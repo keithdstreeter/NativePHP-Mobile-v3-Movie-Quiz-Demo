@@ -1,0 +1,132 @@
+[
+    {
+        "prompt": "What type of fish is Nemo?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Nemo is a clownfish, also known as an anemonefish.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Goldfish", "is_correct": false},
+            {"label": "B", "text": "Clownfish", "is_correct": true},
+            {"label": "C", "text": "Angelfish", "is_correct": false},
+            {"label": "D", "text": "Swordfish", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of Nemo's dad?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Marlin is Nemo's overprotective father who searches the ocean to find him.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Marlin", "is_correct": true},
+            {"label": "B", "text": "Gill", "is_correct": false},
+            {"label": "C", "text": "Crush", "is_correct": false},
+            {"label": "D", "text": "Bruce", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Dory's main problem?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Dory suffers from short-term memory loss, which she mentions frequently throughout the film.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "She can't swim fast", "is_correct": false},
+            {"label": "B", "text": "Short-term memory loss", "is_correct": true},
+            {"label": "C", "text": "She's afraid of sharks", "is_correct": false},
+            {"label": "D", "text": "She can't see well", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is special about Nemo's fin?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Nemo has a smaller right fin, which his dad calls his 'lucky fin'.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "It glows in the dark", "is_correct": false},
+            {"label": "B", "text": "It's a different color", "is_correct": false},
+            {"label": "C", "text": "One fin is smaller than the other", "is_correct": true},
+            {"label": "D", "text": "It has a stripe", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Where is Nemo taken after being captured?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Nemo is placed in a fish tank at a dentist's office in Sydney, Australia.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A pet store", "is_correct": false},
+            {"label": "B", "text": "A dentist's office", "is_correct": true},
+            {"label": "C", "text": "An aquarium", "is_correct": false},
+            {"label": "D", "text": "A restaurant", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What do the sharks in the movie promise to do?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Bruce and his shark friends pledge that 'fish are friends, not food'.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Protect all fish", "is_correct": false},
+            {"label": "B", "text": "Fish are friends, not food", "is_correct": true},
+            {"label": "C", "text": "Never swim near boats", "is_correct": false},
+            {"label": "D", "text": "Help Marlin find Nemo", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the sea turtle that helps Marlin?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Crush is the laid-back sea turtle who gives Marlin and Dory a ride on the East Australian Current.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Crush", "is_correct": true},
+            {"label": "B", "text": "Squirt", "is_correct": false},
+            {"label": "C", "text": "Sheldon", "is_correct": false},
+            {"label": "D", "text": "Bubbles", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What address does Dory memorize?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Dory remembers 'P. Sherman, 42 Wallaby Way, Sydney' — the address on the diver's mask.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "12 Ocean Drive, Melbourne", "is_correct": false},
+            {"label": "B", "text": "42 Wallaby Way, Sydney", "is_correct": true},
+            {"label": "C", "text": "7 Reef Road, Brisbane", "is_correct": false},
+            {"label": "D", "text": "21 Coral Street, Perth", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the leader of the Tank Gang?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Gill is a Moorish idol fish who leads the Tank Gang and helps plan Nemo's escape.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Bloat", "is_correct": false},
+            {"label": "B", "text": "Jacques", "is_correct": false},
+            {"label": "C", "text": "Gill", "is_correct": true},
+            {"label": "D", "text": "Bubbles", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What kind of fish is Dory?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Dory is a regal blue tang, known for their bright blue and yellow coloring.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Clownfish", "is_correct": false},
+            {"label": "B", "text": "Blue tang", "is_correct": true},
+            {"label": "C", "text": "Pufferfish", "is_correct": false},
+            {"label": "D", "text": "Seahorse", "is_correct": false}
+        ]
+    }
+]

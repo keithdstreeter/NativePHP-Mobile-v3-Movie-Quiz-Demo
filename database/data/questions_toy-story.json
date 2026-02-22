@@ -1,0 +1,132 @@
+[
+    {
+        "prompt": "What type of toy is Woody?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Woody is a pull-string cowboy doll and Andy's favorite toy.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A cowboy doll", "is_correct": true},
+            {"label": "B", "text": "A spaceman", "is_correct": false},
+            {"label": "C", "text": "A soldier", "is_correct": false},
+            {"label": "D", "text": "A robot", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Buzz Lightyear's famous catchphrase?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Buzz Lightyear's iconic catchphrase is 'To infinity and beyond!'",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "There's a snake in my boot!", "is_correct": false},
+            {"label": "B", "text": "To infinity and beyond!", "is_correct": true},
+            {"label": "C", "text": "You've got a friend in me!", "is_correct": false},
+            {"label": "D", "text": "Reach for the sky!", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the boy who owns the toys?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Andy is the boy whose toys come to life when humans aren't watching.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Sid", "is_correct": false},
+            {"label": "B", "text": "Andy", "is_correct": true},
+            {"label": "C", "text": "Billy", "is_correct": false},
+            {"label": "D", "text": "Tommy", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Who is the mean kid next door who destroys toys?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Sid Phillips is Andy's neighbor who likes to take apart and reassemble toys in disturbing ways.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Billy", "is_correct": false},
+            {"label": "B", "text": "Sid", "is_correct": true},
+            {"label": "C", "text": "Al", "is_correct": false},
+            {"label": "D", "text": "Stinky Pete", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What kind of toy is Rex?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Rex is a green Tyrannosaurus rex toy who is actually quite anxious and timid.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A dinosaur", "is_correct": true},
+            {"label": "B", "text": "A dragon", "is_correct": false},
+            {"label": "C", "text": "A lizard", "is_correct": false},
+            {"label": "D", "text": "A crocodile", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Mr. Potato Head's wife called?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Mrs. Potato Head first appears in Toy Story 2 but is mentioned in the original.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Mrs. Potato Head", "is_correct": true},
+            {"label": "B", "text": "Mrs. Spud", "is_correct": false},
+            {"label": "C", "text": "Sweet Potato", "is_correct": false},
+            {"label": "D", "text": "Tater Tot", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does Buzz Lightyear believe he is at first?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Buzz initially believes he is a real space ranger, not a toy.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A toy", "is_correct": false},
+            {"label": "B", "text": "A real space ranger", "is_correct": true},
+            {"label": "C", "text": "A robot", "is_correct": false},
+            {"label": "D", "text": "A superhero", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the toy dog with a slinky body?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Slinky Dog is a loyal dachshund toy with a slinky for a body.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Slinky Dog", "is_correct": true},
+            {"label": "B", "text": "Spring Pup", "is_correct": false},
+            {"label": "C", "text": "Stretch", "is_correct": false},
+            {"label": "D", "text": "Zigzag", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What restaurant do the toys end up at?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Andy's family stops at Pizza Planet, where Buzz and Woody end up in the claw machine.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Pizza Planet", "is_correct": true},
+            {"label": "B", "text": "Burger Barn", "is_correct": false},
+            {"label": "C", "text": "Taco Town", "is_correct": false},
+            {"label": "D", "text": "Pasta Palace", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What do the little green aliens in the claw machine worship?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "The aliens call the claw machine's claw 'The Claw' and worship it as a deity.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "The Claw", "is_correct": true},
+            {"label": "B", "text": "The Moon", "is_correct": false},
+            {"label": "C", "text": "Buzz Lightyear", "is_correct": false},
+            {"label": "D", "text": "The Stars", "is_correct": false}
+        ]
+    }
+]

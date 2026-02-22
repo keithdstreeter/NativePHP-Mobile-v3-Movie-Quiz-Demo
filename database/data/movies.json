@@ -1,0 +1,62 @@
+[
+    {
+        "age_group_code": "4-6",
+        "title": "Frozen",
+        "slug": "frozen",
+        "release_year": 2013,
+        "poster_path": "posters/frozen.jpg",
+        "description": "When their kingdom is trapped in eternal winter, fearless Anna teams up with mountain man Kristoff and his reindeer Sven to find her sister Elsa, whose icy powers have inadvertently frozen the land.",
+        "sort_order": 1,
+        "is_active": true
+    },
+    {
+        "age_group_code": "4-6",
+        "title": "Finding Nemo",
+        "slug": "finding-nemo",
+        "release_year": 2003,
+        "poster_path": "posters/finding-nemo.jpg",
+        "description": "After his son Nemo is captured by a diver, timid clownfish Marlin sets out on an epic journey across the ocean to bring him home, meeting unforgettable friends along the way.",
+        "sort_order": 2,
+        "is_active": true
+    },
+    {
+        "age_group_code": "7-9",
+        "title": "The Lion King",
+        "slug": "the-lion-king",
+        "release_year": 1994,
+        "poster_path": "posters/the-lion-king.jpg",
+        "description": "Young lion prince Simba must embrace his destiny as king after the tragic loss of his father Mufasa, overcoming guilt and fear with the help of his loyal friends Timon and Pumbaa.",
+        "sort_order": 1,
+        "is_active": true
+    },
+    {
+        "age_group_code": "7-9",
+        "title": "Toy Story",
+        "slug": "toy-story",
+        "release_year": 1995,
+        "poster_path": "posters/toy-story.jpg",
+        "description": "Woody, a pull-string cowboy doll, faces jealousy when a new spaceman toy, Buzz Lightyear, arrives and threatens his position as Andy's favorite toy.",
+        "sort_order": 2,
+        "is_active": true
+    },
+    {
+        "age_group_code": "10-12",
+        "title": "Harry Potter and the Philosopher's Stone",
+        "slug": "harry-potter-philosophers-stone",
+        "release_year": 2001,
+        "poster_path": "posters/harry-potter-philosophers-stone.jpg",
+        "description": "An orphaned boy discovers he is a wizard on his eleventh birthday and begins his magical education at Hogwarts School of Witchcraft and Wizardry.",
+        "sort_order": 1,
+        "is_active": true
+    },
+    {
+        "age_group_code": "10-12",
+        "title": "The Incredibles",
+        "slug": "the-incredibles",
+        "release_year": 2004,
+        "poster_path": "posters/the-incredibles.jpg",
+        "description": "A family of undercover superheroes is forced out of retirement when a mysterious villain threatens the world, and they must work together to save the day.",
+        "sort_order": 2,
+        "is_active": true
+    }
+]

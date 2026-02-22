@@ -1,0 +1,158 @@
+[
+    {
+        "prompt": "What is the name of the demigod who helps Moana?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Maui is the shapeshifting demigod who joins Moana on her ocean voyage.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Maui", "is_correct": true},
+            {"label": "B", "text": "Tamatoa", "is_correct": false},
+            {"label": "C", "text": "Tui", "is_correct": false},
+            {"label": "D", "text": "Heihei", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of Moana's island?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Moana lives on the island of Motunui with her family and village.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Hawaii", "is_correct": false},
+            {"label": "B", "text": "Motunui", "is_correct": true},
+            {"label": "C", "text": "Te Fiti", "is_correct": false},
+            {"label": "D", "text": "Lalotai", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does Moana need to return to Te Fiti?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Moana must return the heart of Te Fiti, a small green stone, to restore life to the ocean.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A magic shell", "is_correct": false},
+            {"label": "B", "text": "The heart of Te Fiti", "is_correct": true},
+            {"label": "C", "text": "Maui's fishhook", "is_correct": false},
+            {"label": "D", "text": "A golden necklace", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What kind of animal is Heihei?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Heihei is a rooster who accidentally stows away on Moana's boat.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A pig", "is_correct": false},
+            {"label": "B", "text": "A parrot", "is_correct": false},
+            {"label": "C", "text": "A rooster", "is_correct": true},
+            {"label": "D", "text": "A crab", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of Moana's pet pig?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Pua is Moana's adorable pet pig who stays behind on the island.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Pua", "is_correct": true},
+            {"label": "B", "text": "Heihei", "is_correct": false},
+            {"label": "C", "text": "Tamatoa", "is_correct": false},
+            {"label": "D", "text": "Tala", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Who is Moana's grandmother?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Gramma Tala is Moana's grandmother who encourages her to follow the ocean.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Sina", "is_correct": false},
+            {"label": "B", "text": "Tala", "is_correct": true},
+            {"label": "C", "text": "Te Fiti", "is_correct": false},
+            {"label": "D", "text": "Te Ka", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Maui's magical weapon?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Maui uses a giant magical fishhook that allows him to shapeshift.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A trident", "is_correct": false},
+            {"label": "B", "text": "A sword", "is_correct": false},
+            {"label": "C", "text": "A fishhook", "is_correct": true},
+            {"label": "D", "text": "A staff", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the shiny crab in the Realm of Monsters?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Tamatoa is a giant coconut crab who collects shiny treasures in Lalotai.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Sebastian", "is_correct": false},
+            {"label": "B", "text": "Tamatoa", "is_correct": true},
+            {"label": "C", "text": "Tui", "is_correct": false},
+            {"label": "D", "text": "Maui", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What song does Moana sing about wanting to explore the ocean?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "'How Far I'll Go' is the signature song where Moana expresses her desire to sail beyond the reef.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "You're Welcome", "is_correct": false},
+            {"label": "B", "text": "How Far I'll Go", "is_correct": true},
+            {"label": "C", "text": "Shiny", "is_correct": false},
+            {"label": "D", "text": "We Know the Way", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Te Ka actually?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Te Ka is actually Te Fiti without her heart — a lava monster form of the goddess of life.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "An evil volcano god", "is_correct": false},
+            {"label": "B", "text": "Te Fiti without her heart", "is_correct": true},
+            {"label": "C", "text": "Maui's enemy", "is_correct": false},
+            {"label": "D", "text": "A sea monster", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Who chose Moana to return the heart of Te Fiti?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "The ocean itself chose Moana as a toddler to carry the heart back to Te Fiti.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Gramma Tala", "is_correct": false},
+            {"label": "B", "text": "Maui", "is_correct": false},
+            {"label": "C", "text": "The ocean", "is_correct": true},
+            {"label": "D", "text": "Chief Tui", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What are the little coconut-like pirates called?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "The Kakamora are tiny but fierce coconut-armored pirates who attack Moana's boat.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Kakamora", "is_correct": true},
+            {"label": "B", "text": "Coconuts", "is_correct": false},
+            {"label": "C", "text": "Lalotai", "is_correct": false},
+            {"label": "D", "text": "Te Ka minions", "is_correct": false}
+        ]
+    }
+]

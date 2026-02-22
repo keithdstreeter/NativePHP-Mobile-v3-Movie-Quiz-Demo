@@ -1,0 +1,158 @@
+[
+    {
+        "prompt": "What is the name of the main character in Spider-Man: Into the Spider-Verse?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Miles Morales is the teenager who becomes the new Spider-Man in his dimension.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Peter Parker", "is_correct": false},
+            {"label": "B", "text": "Miles Morales", "is_correct": true},
+            {"label": "C", "text": "Gwen Stacy", "is_correct": false},
+            {"label": "D", "text": "Miguel O'Hara", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What animal bites Miles and gives him spider powers?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "A radioactive spider bites Miles in an underground subway station, giving him spider powers.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A radioactive spider", "is_correct": true},
+            {"label": "B", "text": "A mutant lizard", "is_correct": false},
+            {"label": "C", "text": "A genetically modified ant", "is_correct": false},
+            {"label": "D", "text": "A lab experiment gone wrong", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the villain who builds the Super Collider?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Kingpin (Wilson Fisk) builds the Super Collider to bring back his family from another dimension.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Green Goblin", "is_correct": false},
+            {"label": "B", "text": "Doctor Octopus", "is_correct": false},
+            {"label": "C", "text": "Kingpin", "is_correct": true},
+            {"label": "D", "text": "Prowler", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Spider-Gwen's real name?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Spider-Gwen is Gwen Stacy from an alternate dimension where she was bitten by the spider instead of Peter.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Mary Jane", "is_correct": false},
+            {"label": "B", "text": "Gwen Stacy", "is_correct": true},
+            {"label": "C", "text": "Felicia Hardy", "is_correct": false},
+            {"label": "D", "text": "Jessica Drew", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What unique power does Miles have that other Spider-People don't?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Miles can turn invisible (camouflage) and use a bio-electric 'venom strike' — powers unique to him.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Invisibility and venom strike", "is_correct": true},
+            {"label": "B", "text": "Super speed", "is_correct": false},
+            {"label": "C", "text": "Telepathy", "is_correct": false},
+            {"label": "D", "text": "Flight", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Miles's uncle Aaron's secret identity?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Uncle Aaron is secretly the Prowler, a villain working for Kingpin.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Scorpion", "is_correct": false},
+            {"label": "B", "text": "The Prowler", "is_correct": true},
+            {"label": "C", "text": "Tombstone", "is_correct": false},
+            {"label": "D", "text": "Shocker", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What phrase does Peter B. Parker often repeat?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Peter B. Parker uses the famous 'With great power comes great responsibility' throughout the film.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "It's pizza time", "is_correct": false},
+            {"label": "B", "text": "With great power comes great responsibility", "is_correct": true},
+            {"label": "C", "text": "I am Spider-Man", "is_correct": false},
+            {"label": "D", "text": "Anyone can be Spider-Man", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What school does Miles attend?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Miles is enrolled at Brooklyn Visions Academy, a prestigious boarding school.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Midtown High", "is_correct": false},
+            {"label": "B", "text": "Brooklyn Visions Academy", "is_correct": true},
+            {"label": "C", "text": "Xavier's School", "is_correct": false},
+            {"label": "D", "text": "Baxter Academy", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Which Spider-Person is a cartoon pig?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Spider-Ham (Peter Porker) is a cartoon pig from a universe of anthropomorphic animals.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Spider-Ham", "is_correct": true},
+            {"label": "B", "text": "Spider-Noir", "is_correct": false},
+            {"label": "C", "text": "Peni Parker", "is_correct": false},
+            {"label": "D", "text": "Spider-Punk", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does the 'leap of faith' scene represent for Miles?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "The leap of faith scene shows Miles fully embracing his role as Spider-Man by jumping off a building upside-down.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Miles accepting his role as Spider-Man", "is_correct": true},
+            {"label": "B", "text": "Miles learning to fly", "is_correct": false},
+            {"label": "C", "text": "Miles escaping from Kingpin", "is_correct": false},
+            {"label": "D", "text": "Miles testing his web shooters", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Why does Kingpin want to use the Super Collider?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Kingpin wants to use the Super Collider to access alternate dimensions and bring back versions of his wife and son.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "To bring back his wife and son", "is_correct": true},
+            {"label": "B", "text": "To destroy all Spider-People", "is_correct": false},
+            {"label": "C", "text": "To take over the world", "is_correct": false},
+            {"label": "D", "text": "To gain superpowers", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What happens to Spider-People if they stay too long in the wrong dimension?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Spider-People glitch and their cells break down if they stay too long in a dimension that isn't their own.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "They lose their powers", "is_correct": false},
+            {"label": "B", "text": "They glitch and their cells break down", "is_correct": true},
+            {"label": "C", "text": "They turn evil", "is_correct": false},
+            {"label": "D", "text": "They forget who they are", "is_correct": false}
+        ]
+    }
+]

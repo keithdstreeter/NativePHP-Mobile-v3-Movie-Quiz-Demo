@@ -1,0 +1,32 @@
+[
+    {
+        "age_group_code": "4-6",
+        "title": "Moana",
+        "slug": "moana",
+        "release_year": 2016,
+        "poster_path": "posters/moana.jpg",
+        "description": "An adventurous teenager sails out on a daring mission to save her people, and along the way discovers the one thing she always sought: her own identity.",
+        "sort_order": 3,
+        "is_active": true
+    },
+    {
+        "age_group_code": "7-9",
+        "title": "Spider-Man: Into the Spider-Verse",
+        "slug": "spider-man-into-the-spider-verse",
+        "release_year": 2018,
+        "poster_path": "posters/spider-man-into-the-spider-verse.jpg",
+        "description": "Teen Miles Morales becomes the Spider-Man of his reality and crosses paths with five counterparts from other dimensions to stop a threat to all realities.",
+        "sort_order": 3,
+        "is_active": true
+    },
+    {
+        "age_group_code": "10-12",
+        "title": "The Princess Bride",
+        "slug": "the-princess-bride",
+        "release_year": 1987,
+        "poster_path": "posters/the-princess-bride.jpg",
+        "description": "A young woman named Buttercup is kidnapped, and her childhood sweetheart Westley must rescue her, facing giants, swordsmen, and a scheming prince along the way.",
+        "sort_order": 3,
+        "is_active": true
+    }
+]

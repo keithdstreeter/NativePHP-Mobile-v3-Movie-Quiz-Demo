@@ -1,0 +1,158 @@
+[
+    {
+        "prompt": "What is the name of the magical house in Encanto?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Casita is the magical, living house that was gifted to the Madrigal family by the miracle.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Casita", "is_correct": true},
+            {"label": "B", "text": "Casa Grande", "is_correct": false},
+            {"label": "C", "text": "La Hacienda", "is_correct": false},
+            {"label": "D", "text": "El Castillo", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is special about Mirabel compared to her family?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Mirabel is the only Madrigal family member who did not receive a magical gift.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "She has the strongest power", "is_correct": false},
+            {"label": "B", "text": "She didn't get a magical gift", "is_correct": true},
+            {"label": "C", "text": "She can talk to animals", "is_correct": false},
+            {"label": "D", "text": "She is the oldest grandchild", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Luisa's magical gift?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Luisa has the gift of super strength and carries heavy things for the village.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Healing powers", "is_correct": false},
+            {"label": "B", "text": "Super strength", "is_correct": true},
+            {"label": "C", "text": "Shape-shifting", "is_correct": false},
+            {"label": "D", "text": "Weather control", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Isabela's magical gift?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Isabela can make flowers and plants grow anywhere she wants.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Super speed", "is_correct": false},
+            {"label": "B", "text": "Making flowers grow", "is_correct": true},
+            {"label": "C", "text": "Talking to animals", "is_correct": false},
+            {"label": "D", "text": "Flying", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of Mirabel's grandmother?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Abuela Alma Madrigal is the matriarch who received the original miracle.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Abuela Alma", "is_correct": true},
+            {"label": "B", "text": "Abuela Rosa", "is_correct": false},
+            {"label": "C", "text": "Abuela Carmen", "is_correct": false},
+            {"label": "D", "text": "Abuela Maria", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Which family member can hear everything?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Dolores has the gift of super hearing and can hear almost anything happening in the Encanto.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Camilo", "is_correct": false},
+            {"label": "B", "text": "Dolores", "is_correct": true},
+            {"label": "C", "text": "Luisa", "is_correct": false},
+            {"label": "D", "text": "Isabela", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What song does the family sing about Bruno?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "'We Don't Talk About Bruno' became the most popular song from the movie.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "We Don't Talk About Bruno", "is_correct": true},
+            {"label": "B", "text": "Bruno's Lullaby", "is_correct": false},
+            {"label": "C", "text": "The Ballad of Bruno", "is_correct": false},
+            {"label": "D", "text": "Where Is Bruno?", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What was Bruno's magical gift?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Bruno could see the future, but his visions often showed bad things, which made people avoid him.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Invisibility", "is_correct": false},
+            {"label": "B", "text": "Seeing the future", "is_correct": true},
+            {"label": "C", "text": "Controlling weather", "is_correct": false},
+            {"label": "D", "text": "Super speed", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Where was Bruno hiding the whole time?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Bruno had been secretly living inside the walls of Casita for years.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "In the mountains", "is_correct": false},
+            {"label": "B", "text": "In another town", "is_correct": false},
+            {"label": "C", "text": "Inside the walls of Casita", "is_correct": true},
+            {"label": "D", "text": "Under the river", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What happens to Casita at the climax of the movie?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Casita cracks and eventually collapses as the miracle fades, but is later rebuilt by the community.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "It flies away", "is_correct": false},
+            {"label": "B", "text": "It collapses", "is_correct": true},
+            {"label": "C", "text": "It shrinks", "is_correct": false},
+            {"label": "D", "text": "It turns invisible", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Camilo's magical gift?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Camilo can shape-shift into other people, which he often uses to entertain and sometimes cause mischief.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Shape-shifting", "is_correct": true},
+            {"label": "B", "text": "Super hearing", "is_correct": false},
+            {"label": "C", "text": "Talking to plants", "is_correct": false},
+            {"label": "D", "text": "Moving objects with his mind", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What creates the miracle that gives the family their magic?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "The miracle was born from Abuela Alma's love and grief when her husband Pedro sacrificed himself to save the family.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A magic spell from a wizard", "is_correct": false},
+            {"label": "B", "text": "A magical candle lit by Pedro's sacrifice", "is_correct": true},
+            {"label": "C", "text": "A wish on a falling star", "is_correct": false},
+            {"label": "D", "text": "A potion from the mountains", "is_correct": false}
+        ]
+    }
+]

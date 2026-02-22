@@ -1,0 +1,158 @@
+[
+    {
+        "prompt": "What are the five emotions inside Riley's head?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "The five emotions are Joy, Sadness, Fear, Anger, and Disgust.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Joy, Sadness, Fear, Anger, Disgust", "is_correct": true},
+            {"label": "B", "text": "Happy, Sad, Scared, Mad, Shy", "is_correct": false},
+            {"label": "C", "text": "Joy, Love, Fear, Anger, Disgust", "is_correct": false},
+            {"label": "D", "text": "Joy, Sadness, Fear, Anger, Jealousy", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Which emotion is the leader and tries to keep Riley happy?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Joy takes charge and works hard to make sure Riley stays happy.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Sadness", "is_correct": false},
+            {"label": "B", "text": "Joy", "is_correct": true},
+            {"label": "C", "text": "Anger", "is_correct": false},
+            {"label": "D", "text": "Disgust", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Why does Riley's family move to a new city?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Riley's dad gets a new job in San Francisco, so the family moves from Minnesota.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Her dad got a new job", "is_correct": true},
+            {"label": "B", "text": "They wanted warmer weather", "is_correct": false},
+            {"label": "C", "text": "Riley wanted a bigger school", "is_correct": false},
+            {"label": "D", "text": "They won a contest", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What are the glowing orbs that store Riley's memories called?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Memories are stored as colorful orbs, and the most important ones are called core memories.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Dream bubbles", "is_correct": false},
+            {"label": "B", "text": "Core memories", "is_correct": true},
+            {"label": "C", "text": "Mind gems", "is_correct": false},
+            {"label": "D", "text": "Thought crystals", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Riley's favorite sport?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Riley loves hockey — it's one of the things that makes her who she is.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Soccer", "is_correct": false},
+            {"label": "B", "text": "Hockey", "is_correct": true},
+            {"label": "C", "text": "Basketball", "is_correct": false},
+            {"label": "D", "text": "Swimming", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of Riley's imaginary friend?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Bing Bong is Riley's childhood imaginary friend — part elephant, part cat, part dolphin, made of cotton candy.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Bing Bong", "is_correct": true},
+            {"label": "B", "text": "Fluffles", "is_correct": false},
+            {"label": "C", "text": "Rainbow", "is_correct": false},
+            {"label": "D", "text": "Mr. Giggles", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What happens when Joy and Sadness get lost in long-term memory?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Without Joy and Sadness at headquarters, Riley starts losing her personality islands and can't feel happy or sad.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Riley falls asleep", "is_correct": false},
+            {"label": "B", "text": "Riley's personality islands crumble", "is_correct": true},
+            {"label": "C", "text": "Riley gets superpowers", "is_correct": false},
+            {"label": "D", "text": "The other emotions take a vacation", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What color is Sadness?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Sadness is blue, which matches the common phrase 'feeling blue' when someone is sad.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Purple", "is_correct": false},
+            {"label": "B", "text": "Blue", "is_correct": true},
+            {"label": "C", "text": "Gray", "is_correct": false},
+            {"label": "D", "text": "Green", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does Bing Bong sacrifice to help Joy escape?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Bing Bong jumps off the rocket wagon so Joy can fly out of the memory dump, knowing he'll be forgotten forever.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "His song", "is_correct": false},
+            {"label": "B", "text": "Himself — he stays in the memory dump", "is_correct": true},
+            {"label": "C", "text": "His hat", "is_correct": false},
+            {"label": "D", "text": "His bag of memories", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What important lesson does Joy learn by the end of the movie?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Joy learns that Sadness is important too — Riley needs to feel all her emotions, not just happiness.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "That Sadness is necessary and valuable", "is_correct": true},
+            {"label": "B", "text": "That Anger should be in charge", "is_correct": false},
+            {"label": "C", "text": "That Riley doesn't need emotions", "is_correct": false},
+            {"label": "D", "text": "That Fear keeps Riley the safest", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does the console in headquarters do at the end of the movie?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "The console gets upgraded and becomes much bigger with more buttons, showing that Riley's emotions are becoming more complex as she grows up.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "It breaks down completely", "is_correct": false},
+            {"label": "B", "text": "It gets bigger and more complex", "is_correct": true},
+            {"label": "C", "text": "It stays exactly the same", "is_correct": false},
+            {"label": "D", "text": "It turns gold", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Which personality island is powered by Riley's love of being silly?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Goofball Island represents Riley's silly, fun-loving side and is one of her core personality islands.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Friendship Island", "is_correct": false},
+            {"label": "B", "text": "Hockey Island", "is_correct": false},
+            {"label": "C", "text": "Goofball Island", "is_correct": true},
+            {"label": "D", "text": "Family Island", "is_correct": false}
+        ]
+    }
+]

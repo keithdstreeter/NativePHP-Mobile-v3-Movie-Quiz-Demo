@@ -1,0 +1,158 @@
+[
+    {
+        "prompt": "What is the name of Simba's father?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Mufasa is Simba's father and the King of the Pride Lands.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Mufasa", "is_correct": true},
+            {"label": "B", "text": "Scar", "is_correct": false},
+            {"label": "C", "text": "Rafiki", "is_correct": false},
+            {"label": "D", "text": "Zazu", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Who is the villain in The Lion King?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Scar is Mufasa's jealous brother who plots to take over the Pride Lands.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Rafiki", "is_correct": false},
+            {"label": "B", "text": "Zazu", "is_correct": false},
+            {"label": "C", "text": "Scar", "is_correct": true},
+            {"label": "D", "text": "Timon", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What are the names of Simba's two best friends in the jungle?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Timon (a meerkat) and Pumbaa (a warthog) befriend Simba and teach him 'Hakuna Matata'.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Timon and Pumbaa", "is_correct": true},
+            {"label": "B", "text": "Zazu and Rafiki", "is_correct": false},
+            {"label": "C", "text": "Shenzi and Banzai", "is_correct": false},
+            {"label": "D", "text": "Nala and Sarabi", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does 'Hakuna Matata' mean?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "'Hakuna Matata' is a Swahili phrase meaning 'no worries'.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Be brave", "is_correct": false},
+            {"label": "B", "text": "No worries", "is_correct": true},
+            {"label": "C", "text": "Stay strong", "is_correct": false},
+            {"label": "D", "text": "Be happy", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What kind of animal is Pumbaa?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Pumbaa is a warthog who becomes one of Simba's best friends.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A meerkat", "is_correct": false},
+            {"label": "B", "text": "A warthog", "is_correct": true},
+            {"label": "C", "text": "A baboon", "is_correct": false},
+            {"label": "D", "text": "A hyena", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the place where Simba grows up as king?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Pride Rock is the iconic landmark in the Pride Lands where the lion king rules.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Pride Rock", "is_correct": true},
+            {"label": "B", "text": "Lion Mountain", "is_correct": false},
+            {"label": "C", "text": "Savanna Castle", "is_correct": false},
+            {"label": "D", "text": "King's Peak", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Who is the baboon who presents baby Simba to the animals?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Rafiki is the wise mandrill who holds baby Simba up at Pride Rock.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Zazu", "is_correct": false},
+            {"label": "B", "text": "Rafiki", "is_correct": true},
+            {"label": "C", "text": "Ed", "is_correct": false},
+            {"label": "D", "text": "Mufasa", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What kind of bird is Zazu?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Zazu is a red-billed hornbill who serves as the king's majordomo.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A parrot", "is_correct": false},
+            {"label": "B", "text": "An eagle", "is_correct": false},
+            {"label": "C", "text": "A hornbill", "is_correct": true},
+            {"label": "D", "text": "A toucan", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What song does Scar sing about his evil plan?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Scar sings 'Be Prepared' as he plots with the hyenas to take over the Pride Lands.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Circle of Life", "is_correct": false},
+            {"label": "B", "text": "Be Prepared", "is_correct": true},
+            {"label": "C", "text": "I Just Can't Wait to Be King", "is_correct": false},
+            {"label": "D", "text": "Hakuna Matata", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of Simba's childhood friend who later finds him?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Nala is Simba's childhood friend who finds him in the jungle and convinces him to return.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Sarabi", "is_correct": false},
+            {"label": "B", "text": "Nala", "is_correct": true},
+            {"label": "C", "text": "Shenzi", "is_correct": false},
+            {"label": "D", "text": "Sarafina", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What dangerous place does Simba visit as a cub despite being told not to?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Simba sneaks off to the Elephant Graveyard with Nala, where they encounter hyenas.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "The desert", "is_correct": false},
+            {"label": "B", "text": "The Elephant Graveyard", "is_correct": true},
+            {"label": "C", "text": "The dark cave", "is_correct": false},
+            {"label": "D", "text": "The river", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "How does Scar cause the stampede that threatens Simba?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Scar and the hyenas frighten a herd of wildebeest into a gorge where Simba is waiting.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "He sets a fire", "is_correct": false},
+            {"label": "B", "text": "He pushes rocks down a hill", "is_correct": false},
+            {"label": "C", "text": "The hyenas frighten the wildebeest", "is_correct": true},
+            {"label": "D", "text": "He roars loudly", "is_correct": false}
+        ]
+    }
+]

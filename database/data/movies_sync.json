@@ -1,0 +1,22 @@
+[
+    {
+        "age_group_code": "4-6",
+        "title": "Encanto",
+        "slug": "encanto",
+        "release_year": 2021,
+        "poster_path": "posters/encanto.jpg",
+        "description": "The Madrigal family lives in a magical house in the mountains of Colombia, where every child receives a unique magical gift — except Mirabel, who may be the family's last hope.",
+        "sort_order": 4,
+        "is_active": true
+    },
+    {
+        "age_group_code": "7-9",
+        "title": "Inside Out",
+        "slug": "inside-out",
+        "release_year": 2015,
+        "poster_path": "posters/inside-out.jpg",
+        "description": "When Riley moves to a new city, her emotions — Joy, Sadness, Fear, Anger, and Disgust — struggle to guide her through the transition as core memories and personality islands fall apart.",
+        "sort_order": 4,
+        "is_active": true
+    }
+]

@@ -1,0 +1,158 @@
+[
+    {
+        "prompt": "What is the name of Elsa's sister?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Anna is Elsa's younger sister and one of the main characters in Frozen.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Anna", "is_correct": true},
+            {"label": "B", "text": "Rapunzel", "is_correct": false},
+            {"label": "C", "text": "Belle", "is_correct": false},
+            {"label": "D", "text": "Ariel", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What magical power does Elsa have?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Elsa has the power to create and control ice and snow.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Fire powers", "is_correct": false},
+            {"label": "B", "text": "Ice and snow powers", "is_correct": true},
+            {"label": "C", "text": "Flying", "is_correct": false},
+            {"label": "D", "text": "Invisibility", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the snowman that Elsa creates?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Olaf is the friendly snowman that Elsa accidentally brings to life.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Frosty", "is_correct": false},
+            {"label": "B", "text": "Snowball", "is_correct": false},
+            {"label": "C", "text": "Olaf", "is_correct": true},
+            {"label": "D", "text": "Marshmallow", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does Olaf dream about experiencing?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Olaf sings 'In Summer' about his dream of experiencing warm weather and sunshine.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Winter", "is_correct": false},
+            {"label": "B", "text": "Summer", "is_correct": true},
+            {"label": "C", "text": "Autumn", "is_correct": false},
+            {"label": "D", "text": "Spring", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of Kristoff's reindeer?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Sven is Kristoff's loyal reindeer companion who loves carrots.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Rudolf", "is_correct": false},
+            {"label": "B", "text": "Sven", "is_correct": true},
+            {"label": "C", "text": "Blitzen", "is_correct": false},
+            {"label": "D", "text": "Comet", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the kingdom in Frozen?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Arendelle is the fictional Scandinavian kingdom where Elsa and Anna live.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Arendelle", "is_correct": true},
+            {"label": "B", "text": "Corona", "is_correct": false},
+            {"label": "C", "text": "Narnia", "is_correct": false},
+            {"label": "D", "text": "Neverland", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What famous song does Elsa sing when she builds her ice palace?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "'Let It Go' is the iconic song Elsa sings as she embraces her powers and builds her ice palace.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Do You Want to Build a Snowman?", "is_correct": false},
+            {"label": "B", "text": "Let It Go", "is_correct": true},
+            {"label": "C", "text": "Into the Unknown", "is_correct": false},
+            {"label": "D", "text": "Love Is an Open Door", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Who is the prince that tricks Anna?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Prince Hans of the Southern Isles pretends to love Anna but is actually a villain.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Prince Eric", "is_correct": false},
+            {"label": "B", "text": "Prince Charming", "is_correct": false},
+            {"label": "C", "text": "Prince Hans", "is_correct": true},
+            {"label": "D", "text": "Prince Naveen", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What act of true love saves Anna at the end?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Elsa's love for her sister Anna is the act of true love that thaws Anna's frozen heart.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A kiss from Kristoff", "is_correct": false},
+            {"label": "B", "text": "A hug from Olaf", "is_correct": false},
+            {"label": "C", "text": "Anna sacrificing herself for Elsa", "is_correct": true},
+            {"label": "D", "text": "A kiss from Hans", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What do the trolls try to do when they meet Anna?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "The trolls try to marry Anna and Kristoff in a musical number called 'Fixer Upper'.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Chase her away", "is_correct": false},
+            {"label": "B", "text": "Turn her into a troll", "is_correct": false},
+            {"label": "C", "text": "Marry her to Kristoff", "is_correct": true},
+            {"label": "D", "text": "Teach her magic", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Kristoff's job?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Kristoff is an ice harvester who cuts and sells ice for a living.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "A prince", "is_correct": false},
+            {"label": "B", "text": "An ice harvester", "is_correct": true},
+            {"label": "C", "text": "A knight", "is_correct": false},
+            {"label": "D", "text": "A baker", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does Elsa accidentally do to Anna when they are children?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "While playing, Elsa accidentally strikes Anna in the head with her ice magic.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Freezes her hand", "is_correct": false},
+            {"label": "B", "text": "Strikes her head with ice magic", "is_correct": true},
+            {"label": "C", "text": "Locks her in a room", "is_correct": false},
+            {"label": "D", "text": "Turns her into a snowman", "is_correct": false}
+        ]
+    }
+]

@@ -1,0 +1,132 @@
+[
+    {
+        "prompt": "What is Mr. Incredible's real name?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Mr. Incredible's civilian identity is Bob Parr.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Bob Parr", "is_correct": true},
+            {"label": "B", "text": "John Smith", "is_correct": false},
+            {"label": "C", "text": "Steve Rogers", "is_correct": false},
+            {"label": "D", "text": "Clark Kent", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Elastigirl's superpower?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Elastigirl (Helen Parr) can stretch her body into any shape or form.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Super strength", "is_correct": false},
+            {"label": "B", "text": "Stretching her body", "is_correct": true},
+            {"label": "C", "text": "Flying", "is_correct": false},
+            {"label": "D", "text": "Invisibility", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What power does Violet have?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Violet can turn invisible and create protective force fields.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Super speed", "is_correct": false},
+            {"label": "B", "text": "Invisibility and force fields", "is_correct": true},
+            {"label": "C", "text": "Stretching", "is_correct": false},
+            {"label": "D", "text": "Fire powers", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is Dash's superpower?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Dash (Dashiell Parr) has the power of super speed.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Invisibility", "is_correct": false},
+            {"label": "B", "text": "Super strength", "is_correct": false},
+            {"label": "C", "text": "Super speed", "is_correct": true},
+            {"label": "D", "text": "Shape-shifting", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the villain in The Incredibles?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Syndrome (Buddy Pine) is a former fan of Mr. Incredible who became a villain.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Syndrome", "is_correct": true},
+            {"label": "B", "text": "The Underminer", "is_correct": false},
+            {"label": "C", "text": "Bomb Voyage", "is_correct": false},
+            {"label": "D", "text": "Screenslaver", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What does Edna Mode design for superheroes?",
+        "difficulty": "easy",
+        "kind": "multiple_choice",
+        "explanation": "Edna Mode is the famous designer who creates supersuits for superheroes.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Weapons", "is_correct": false},
+            {"label": "B", "text": "Supersuits", "is_correct": true},
+            {"label": "C", "text": "Cars", "is_correct": false},
+            {"label": "D", "text": "Gadgets", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What famous rule does Edna Mode have about superhero costumes?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Edna's famous rule is 'No capes!' because capes have caused many superhero accidents.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "No masks", "is_correct": false},
+            {"label": "B", "text": "No capes", "is_correct": true},
+            {"label": "C", "text": "No boots", "is_correct": false},
+            {"label": "D", "text": "No gloves", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the baby Jack-Jack's surprising ability?",
+        "difficulty": "medium",
+        "kind": "multiple_choice",
+        "explanation": "Jack-Jack has multiple powers including turning into fire, a monster, and more.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "He has no powers", "is_correct": false},
+            {"label": "B", "text": "Only super strength", "is_correct": false},
+            {"label": "C", "text": "Multiple powers", "is_correct": true},
+            {"label": "D", "text": "Only flying", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "Why did superheroes have to go into hiding?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "Superheroes were sued for property damage and forced into the Superhero Relocation Program.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "They lost their powers", "is_correct": false},
+            {"label": "B", "text": "Lawsuits forced them into hiding", "is_correct": true},
+            {"label": "C", "text": "Villains defeated them", "is_correct": false},
+            {"label": "D", "text": "They chose to retire", "is_correct": false}
+        ]
+    },
+    {
+        "prompt": "What is the name of the robot that Syndrome uses?",
+        "difficulty": "hard",
+        "kind": "multiple_choice",
+        "explanation": "The Omnidroid is Syndrome's killer robot that he uses to defeat superheroes.",
+        "is_active": true,
+        "choices": [
+            {"label": "A", "text": "Omnidroid", "is_correct": true},
+            {"label": "B", "text": "Destructobot", "is_correct": false},
+            {"label": "C", "text": "Megatron", "is_correct": false},
+            {"label": "D", "text": "Iron Giant", "is_correct": false}
+        ]
+    }
+]
