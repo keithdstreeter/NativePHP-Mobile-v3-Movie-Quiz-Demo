@@ -70,7 +70,11 @@ return new class extends Migration
                 basename($file),
             );
 
-            $movie = Movie::query()->where('slug', $slug)->firstOrFail();
+            $movie = Movie::query()->where('slug', $slug)->first();
+
+            if (! $movie) {
+                continue;
+            }
             $questions = json_decode(file_get_contents($file), true);
 
             foreach ($questions as $questionData) {
