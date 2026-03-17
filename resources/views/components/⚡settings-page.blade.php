@@ -128,6 +128,12 @@ new #[Title('Settings — Quiz App')] class extends Component
         $this->resetComplete = true;
     }
 
+    public function logout(): void
+    {
+        session()->forget('auth_token');
+        $this->redirect(route('login'), navigate: true);
+    }
+
     /** @return \Illuminate\Database\Eloquent\Collection<int, AgeGroup> */
     #[Computed]
     public function ageGroups(): \Illuminate\Database\Eloquent\Collection
@@ -294,5 +300,16 @@ new #[Title('Settings — Quiz App')] class extends Component
                 </div>
             </div>
         @endif
+
+        {{-- Account --}}
+        <div class="mt-6 rounded-2xl bg-white/80 backdrop-blur-sm border-2 border-white p-6 animate-fade-in-up">
+            <h2 class="text-lg font-semibold text-gray-700 mb-4">Account</h2>
+            <button
+                wire:click="logout"
+                class="w-full rounded-2xl border-2 border-candy-200 px-4 py-4 text-sm font-bold text-candy-500 hover:bg-candy-50 transition-all duration-200 min-h-[48px]"
+            >
+                Log Out
+            </button>
+        </div>
     </div>
 </div>

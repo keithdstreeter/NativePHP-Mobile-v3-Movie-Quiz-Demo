@@ -51,7 +51,15 @@ class DeviceIdentity
 
         $info = Device::getInfo();
 
-        if ($info) {
+        if (is_array($info)) {
+            return [
+                'model' => $info['model'] ?? 'Unknown',
+                'os' => $info['os'] ?? 'Unknown',
+                'platform' => $info['platform'] ?? 'Unknown',
+            ];
+        }
+
+        if (is_string($info)) {
             $decoded = json_decode($info, true);
 
             if (is_array($decoded)) {
