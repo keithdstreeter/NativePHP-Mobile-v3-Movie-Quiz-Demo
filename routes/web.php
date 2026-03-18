@@ -1,10 +1,21 @@
 <?php
 
 use App\Http\Middleware\Authenticated;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::livewire('/login', 'login-page')->name('login');
 Route::livewire('/register', 'register-page')->name('register');
+
+Route::get('/auth/callback', function (Request $request) {
+    if ($request->filled('token')) {
+        session(['auth_token' => $request->get('token')]);
+
+        return redirect()->route('home');
+    }
+
+    return redirect()->route('login');
+});
 
 Route::middleware(Authenticated::class)->group(function () {
     Route::livewire('/', 'home-page')->name('home');
