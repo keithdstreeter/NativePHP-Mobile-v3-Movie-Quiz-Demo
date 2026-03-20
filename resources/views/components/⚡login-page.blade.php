@@ -27,7 +27,6 @@ new #[Title('Login')] class extends Component {
     {
         $this->reset('error');
 
-        info('Initiating Google login...');
         try {
             $response = Http::api()->get('/auth/google/redirect');
         } catch (\Illuminate\Http\Client\ConnectionException) {
