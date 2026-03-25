@@ -12,6 +12,7 @@ it('stores token in session and redirects to home on callback with token', funct
         ->assertRedirectToRoute('home');
 
     expect(session('auth_token'))->toBe('abc123');
+    expect(session('token_verified_at'))->toBeInstanceOf(\Illuminate\Support\Carbon::class);
 });
 
 it('redirects to login on callback without token', function () {

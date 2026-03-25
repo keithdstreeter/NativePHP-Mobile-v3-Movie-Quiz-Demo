@@ -67,7 +67,7 @@ new #[Title('Login')] class extends Component {
         }
 
         if ($response->successful() && $response->json('token')) {
-            session(['auth_token' => $response->json('token')]);
+            session(['auth_token' => $response->json('token'), 'token_verified_at' => now()]);
             $this->redirect(route('home'), navigate: true);
 
             return;

@@ -130,7 +130,7 @@ new #[Title('Settings — Quiz App')] class extends Component
 
     public function logout(): void
     {
-        session()->forget('auth_token');
+        session()->forget(['auth_token', 'token_verified_at']);
         $this->redirect(route('login'), navigate: true);
     }
 
