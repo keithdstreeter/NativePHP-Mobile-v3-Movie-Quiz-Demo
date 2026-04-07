@@ -299,7 +299,7 @@ return [
     */
 
     'permissions' => [
-        //
+        'camera' => true,
     ],
 
     /*
