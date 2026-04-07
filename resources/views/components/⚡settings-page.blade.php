@@ -178,9 +178,10 @@ new #[Title('Settings — Quiz App')] class extends Component
 
     protected function processAvatarFromPath(string $path): void
     {
-        Storage::putFileAs('', new \Illuminate\Http\File($path), 'avatar.jpg');
+        $service = app(AvatarService::class);
 
-        $this->avatarUrl = Storage::url('avatar.jpg').'?v='.time();
+        $service->saveFromPath($path);
+        $this->avatarUrl = $service->avatarUrl();
 
         Dialog::toast('Avatar updated');
     }
