@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__laravel-boost__application-info",
+      "mcp__laravel-boost__search-docs",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:nativephp.com)",
+      "Bash(curl:*)",
+      "Bash(grep -v '^\\\\s*$')",
+      "Bash(lynx -dump /tmp/assets_page.html)",
+      "Bash(php artisan:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "laravel-boost"
+  ]
+}

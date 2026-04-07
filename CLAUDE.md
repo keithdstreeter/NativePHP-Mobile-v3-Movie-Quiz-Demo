@@ -9,7 +9,7 @@ The Laravel Boost guidelines are specifically curated by Laravel maintainers for
 
 This application is a Laravel application and its main Laravel ecosystems package & versions are below. You are an expert with them all. Ensure you abide by these specific packages & versions.
 
-- php - 8.4.19
+- php - 8.4
 - laravel/framework (LARAVEL) - v12
 - laravel/prompts (PROMPTS) - v0
 - livewire/livewire (LIVEWIRE) - v4
@@ -26,9 +26,11 @@ This application is a Laravel application and its main Laravel ecosystems packag
 
 This project has domain-specific skills available. You MUST activate the relevant skill whenever you work in that domain—don't wait until you're stuck.
 
-- `livewire-development` — Develops reactive Livewire 4 components. Activates when creating, updating, or modifying Livewire components; working with wire:model, wire:click, wire:loading, or any wire: directives; adding real-time updates, loading states, or reactivity; debugging component behavior; writing Livewire tests; or when the user mentions Livewire, component, counter, or reactive UI.
-- `pest-testing` — Tests applications using the Pest 4 PHP framework. Activates when writing tests, creating unit or feature tests, adding assertions, testing Livewire components, browser testing, debugging test failures, working with datasets or mocking; or when the user mentions test, spec, TDD, expects, assertion, coverage, or needs to verify functionality works.
-- `tailwindcss-development` — Styles applications using Tailwind CSS v4 utilities. Activates when adding styles, restyling components, working with gradients, spacing, layout, flex, grid, responsive design, dark mode, colors, typography, or borders; or when the user mentions CSS, styling, classes, Tailwind, restyle, hero section, cards, buttons, or any visual/UI changes.
+- `laravel-best-practices` — Apply this skill whenever writing, reviewing, or refactoring Laravel PHP code. This includes creating or modifying controllers, models, migrations, form requests, policies, jobs, scheduled commands, service classes, and Eloquent queries. Triggers for N+1 and query performance issues, caching strategies, authorization and security patterns, validation, error handling, queue and job configuration, route definitions, and architectural decisions. Also use for Laravel code reviews and refactoring existing Laravel code to follow best practices. Covers any task involving Laravel backend PHP code patterns.
+- `livewire-development` — Use for any task or question involving Livewire. Activate if user mentions Livewire, wire: directives, or Livewire-specific concepts like wire:model, wire:click, wire:sort, or islands, invoke this skill. Covers building new components, debugging reactivity issues, real-time form validation, drag-and-drop, loading states, migrating from Livewire 3 to 4, converting component formats (SFC/MFC/class-based), and performance optimization. Do not use for non-Livewire reactive UI (React, Vue, Alpine-only, Inertia.js) or standard Laravel forms without Livewire.
+- `pest-testing` — Use this skill for Pest PHP testing in Laravel projects only. Trigger whenever any test is being written, edited, fixed, or refactored — including fixing tests that broke after a code change, adding assertions, converting PHPUnit to Pest, adding datasets, and TDD workflows. Always activate when the user asks how to write something in Pest, mentions test files or directories (tests/Feature, tests/Unit, tests/Browser), or needs browser testing, smoke testing multiple pages for JS errors, or architecture tests. Covers: it()/expect() syntax, datasets, mocking, browser testing (visit/click/fill), smoke testing, arch(), Livewire component tests, RefreshDatabase, and all Pest 4 features. Do not use for factories, seeders, migrations, controllers, models, or non-test PHP code.
+- `tailwindcss-development` — Always invoke when the user's message includes 'tailwind' in any form. Also invoke for: building responsive grid layouts (multi-column card grids, product grids), flex/grid page structures (dashboards with sidebars, fixed topbars, mobile-toggle navs), styling UI components (cards, tables, navbars, pricing sections, forms, inputs, badges), adding dark mode variants, fixing spacing or typography, and Tailwind v3/v4 work. The core use case: writing or fixing Tailwind utility classes in HTML templates (Blade, JSX, Vue). Skip for backend PHP logic, database queries, API routes, JavaScript with no HTML/CSS component, CSS file audits, build tool configuration, and vanilla CSS.
+- `nativephp-mobile` — Builds native iOS and Android apps with PHP & Larvel. Activate when using native device APIs (camera, dialog, biometrics, scanner, geolocation, push notifications), EDGE components (bottom-nav, top-bar, side-nav), `#nativephp` JavaScript imports, native mobile events, NativePHP Artisan commands (native:run, native:install, native:watch), deep links, secure storage, or mobile app deployment.
 
 ## Conventions
 
@@ -61,82 +63,51 @@ This project has domain-specific skills available. You MUST activate the relevan
 
 # Laravel Boost
 
-- Laravel Boost is an MCP server that comes with powerful tools designed specifically for this application. Use them.
+## Tools
 
-## Artisan Commands
+- Laravel Boost is an MCP server with tools designed specifically for this application. Prefer Boost tools over manual alternatives like shell commands or file reads.
+- Use `database-query` to run read-only queries against the database instead of writing raw SQL in tinker.
+- Use `database-schema` to inspect table structure before writing migrations or models.
+- Use `get-absolute-url` to resolve the correct scheme, domain, and port for project URLs. Always use this before sharing a URL with the user.
+- Use `browser-logs` to read browser logs, errors, and exceptions. Only recent logs are useful, ignore old entries.
 
-- Run Artisan commands directly via the command line (e.g., `php artisan route:list`, `php artisan tinker --execute "..."`).
-- Use `php artisan list` to discover available commands and `php artisan [command] --help` to check parameters.
+## Searching Documentation (IMPORTANT)
 
-## URLs
+- Always use `search-docs` before making code changes. Do not skip this step. It returns version-specific docs based on installed packages automatically.
+- Pass a `packages` array to scope results when you know which packages are relevant.
+- Use multiple broad, topic-based queries: `['rate limiting', 'routing rate limiting', 'routing']`. Expect the most relevant results first.
+- Do not add package names to queries because package info is already shared. Use `test resource table`, not `filament 4 test resource table`.
 
-- Whenever you share a project URL with the user, you should use the `get-absolute-url` tool to ensure you're using the correct scheme, domain/IP, and port.
+### Search Syntax
 
-## Debugging
+1. Use words for auto-stemmed AND logic: `rate limit` matches both "rate" AND "limit".
+2. Use `"quoted phrases"` for exact position matching: `"infinite scroll"` requires adjacent words in order.
+3. Combine words and phrases for mixed queries: `middleware "rate limit"`.
+4. Use multiple queries for OR logic: `queries=["authentication", "middleware"]`.
 
-- Use the `database-query` tool when you only need to read from the database.
-- Use the `database-schema` tool to inspect table structure before writing migrations or models.
-- To execute PHP code for debugging, run `php artisan tinker --execute "your code here"` directly.
-- To read configuration values, read the config files directly or run `php artisan config:show [key]`.
-- To inspect routes, run `php artisan route:list` directly.
+## Artisan
+
+- Run Artisan commands directly via the command line (e.g., `php artisan route:list`). Use `php artisan list` to discover available commands and `php artisan [command] --help` to check parameters.
+- Inspect routes with `php artisan route:list`. Filter with: `--method=GET`, `--name=users`, `--path=api`, `--except-vendor`, `--only-vendor`.
+- Read configuration values using dot notation: `php artisan config:show app.name`, `php artisan config:show database.default`. Or read config files directly from the `config/` directory.
 - To check environment variables, read the `.env` file directly.
 
-## Reading Browser Logs With the `browser-logs` Tool
+## Tinker
 
-- You can read browser logs, errors, and exceptions using the `browser-logs` tool from Boost.
-- Only recent browser logs will be useful - ignore old logs.
-
-## Searching Documentation (Critically Important)
-
-- Boost comes with a powerful `search-docs` tool you should use before trying other approaches when working with Laravel or Laravel ecosystem packages. This tool automatically passes a list of installed packages and their versions to the remote Boost API, so it returns only version-specific documentation for the user's circumstance. You should pass an array of packages to filter on if you know you need docs for particular packages.
-- Search the documentation before making code changes to ensure we are taking the correct approach.
-- Use multiple, broad, simple, topic-based queries at once. For example: `['rate limiting', 'routing rate limiting', 'routing']`. The most relevant results will be returned first.
-- Do not add package names to queries; package information is already shared. For example, use `test resource table`, not `filament 4 test resource table`.
-
-### Available Search Syntax
-
-1. Simple Word Searches with auto-stemming - query=authentication - finds 'authenticate' and 'auth'.
-2. Multiple Words (AND Logic) - query=rate limit - finds knowledge containing both "rate" AND "limit".
-3. Quoted Phrases (Exact Position) - query="infinite scroll" - words must be adjacent and in that order.
-4. Mixed Queries - query=middleware "rate limit" - "middleware" AND exact phrase "rate limit".
-5. Multiple Queries - queries=["authentication", "middleware"] - ANY of these terms.
+- Execute PHP in app context for debugging and testing code. Do not create models without user approval, prefer tests with factories instead. Prefer existing Artisan commands over custom tinker code.
+- Always use single quotes to prevent shell expansion: `php artisan tinker --execute 'Your::code();'`
+  - Double quotes for PHP strings inside: `php artisan tinker --execute 'User::where("active", true)->count();'`
 
 === php rules ===
 
 # PHP
 
 - Always use curly braces for control structures, even for single-line bodies.
-
-## Constructors
-
-- Use PHP 8 constructor property promotion in `__construct()`.
-    - `public function __construct(public GitHub $github) { }`
-- Do not allow empty `__construct()` methods with zero parameters unless the constructor is private.
-
-## Type Declarations
-
-- Always use explicit return type declarations for methods and functions.
-- Use appropriate PHP type hints for method parameters.
-
-<!-- Explicit Return Types and Method Params -->
-```php
-protected function isAccessible(User $user, ?string $path = null): bool
-{
-    ...
-}
-```
-
-## Enums
-
-- Typically, keys in an Enum should be TitleCase. For example: `FavoritePerson`, `BestLake`, `Monthly`.
-
-## Comments
-
-- Prefer PHPDoc blocks over inline comments. Never use comments within the code itself unless the logic is exceptionally complex.
-
-## PHPDoc Blocks
-
-- Add useful array shape type definitions when appropriate.
+- Use PHP 8 constructor property promotion: `public function __construct(public GitHub $github) { }`. Do not leave empty zero-parameter `__construct()` methods unless the constructor is private.
+- Use explicit return type declarations and type hints for all method parameters: `function isAccessible(User $user, ?string $path = null): bool`
+- Use TitleCase for Enum keys: `FavoritePerson`, `BestLake`, `Monthly`.
+- Prefer PHPDoc blocks over inline comments. Only add inline comments for exceptionally complex logic.
+- Use array shape type definitions in PHPDoc blocks.
 
 === tests rules ===
 
@@ -153,42 +124,17 @@ protected function isAccessible(User $user, ?string $path = null): bool
 - If you're creating a generic PHP class, use `php artisan make:class`.
 - Pass `--no-interaction` to all Artisan commands to ensure they work without user input. You should also pass the correct `--options` to ensure correct behavior.
 
-## Database
-
-- Always use proper Eloquent relationship methods with return type hints. Prefer relationship methods over raw queries or manual joins.
-- Use Eloquent models and relationships before suggesting raw database queries.
-- Avoid `DB::`; prefer `Model::query()`. Generate code that leverages Laravel's ORM capabilities rather than bypassing them.
-- Generate code that prevents N+1 query problems by using eager loading.
-- Use Laravel's query builder for very complex database operations.
-
 ### Model Creation
 
 - When creating new models, create useful factories and seeders for them too. Ask the user if they need any other things, using `php artisan make:model --help` to check the available options.
 
-### APIs & Eloquent Resources
+## APIs & Eloquent Resources
 
 - For APIs, default to using Eloquent API Resources and API versioning unless existing API routes do not, then you should follow existing application convention.
-
-## Controllers & Validation
-
-- Always create Form Request classes for validation rather than inline validation in controllers. Include both validation rules and custom error messages.
-- Check sibling Form Requests to see if the application uses array or string based validation rules.
-
-## Authentication & Authorization
-
-- Use Laravel's built-in authentication and authorization features (gates, policies, Sanctum, etc.).
 
 ## URL Generation
 
 - When generating links to other pages, prefer named routes and the `route()` function.
-
-## Queues
-
-- Use queued jobs for time-consuming operations with the `ShouldQueue` interface.
-
-## Configuration
-
-- Use environment variables only in configuration files - never use the `env()` function directly outside of config files. Always use `config('app.name')`, not `env('APP_NAME')`.
 
 ## Testing
 
@@ -213,7 +159,7 @@ protected function isAccessible(User $user, ?string $path = null): bool
 - Middleware are configured declaratively in `bootstrap/app.php` using `Application::configure()->withMiddleware()`.
 - `bootstrap/app.php` is the file to register middleware, exceptions, and routing files.
 - `bootstrap/providers.php` contains application specific service providers.
-- The `app\Console\Kernel.php` file no longer exists; use `bootstrap/app.php` or `routes/console.php` for console configuration.
+- The `app/Console/Kernel.php` file no longer exists; use `bootstrap/app.php` or `routes/console.php` for console configuration.
 - Console commands in `app/Console/Commands/` are automatically available and do not require manual registration.
 
 ## Database
@@ -229,10 +175,9 @@ protected function isAccessible(User $user, ?string $path = null): bool
 
 # Livewire
 
-- Livewire allows you to build dynamic, reactive interfaces using only PHP — no JavaScript required.
-- Instead of writing frontend code in JavaScript frameworks, you use Alpine.js to build the UI when client-side interactions are required.
-- State lives on the server; the UI reflects it. Validate and authorize in actions (they're like HTTP requests).
-- IMPORTANT: Activate `livewire-development` every time you're working with Livewire-related tasks.
+- Livewire allow to build dynamic, reactive interfaces in PHP without writing JavaScript.
+- You can use Alpine.js for client-side interactions instead of JavaScript frameworks.
+- Keep state server-side so the UI reflects it. Validate and authorize in actions as you would in HTTP requests.
 
 === pint/core rules ===
 
@@ -248,181 +193,283 @@ protected function isAccessible(User $user, ?string $path = null): bool
 - This project uses Pest for testing. Create tests: `php artisan make:test --pest {name}`.
 - Run tests: `php artisan test --compact` or filter: `php artisan test --compact --filter=testName`.
 - Do NOT delete tests without approval.
-- CRITICAL: ALWAYS use `search-docs` tool for version-specific Pest documentation and updated code examples.
-- IMPORTANT: Activate `pest-testing` every time you're working with a Pest or testing-related task.
-
-=== tailwindcss/core rules ===
-
-# Tailwind CSS
-
-- Always use existing Tailwind conventions; check project patterns before adding new ones.
-- IMPORTANT: Always use `search-docs` tool for version-specific Tailwind CSS documentation and updated code examples. Never rely on training data.
-- IMPORTANT: Activate `tailwindcss-development` every time you're working with a Tailwind CSS or styling-related task.
 
 === nativephp/mobile rules ===
 
 ## NativePHP Mobile
 
-- NativePHP Mobile is a Laravel package that enables developers to build native iOS and Android applications using PHP and native UI components.
-- NativePHP Mobile runs a full PHP runtime directly on the device with SQLite — no web server required.
-- NativePHP Mobile supports **two frontend approaches**: Livewire/Blade (PHP) or JavaScript frameworks (Vue, React, Inertia, etc.).
-- NativePHP Mobile documentation is hosted at `https://nativephp.com/docs/mobile/2/**`
-- **Before implementing any features using NativePHP Mobile, use the `web-search` tool to get the latest docs for that specific feature. The docs listing is available in <available-docs>**
+- NativePHP Mobile is a Laravel package for building native iOS and Android apps using PHP and native UI components. It runs a full PHP runtime directly on the device with SQLite — no web server required.
+- Documentation: `https://nativephp.com/docs/mobile/3/**`
+- IMPORTANT: Always activate the `nativephp-mobile` skill every time you work on any NativePHP functionality.
 
-### Identifying the Development Environment
+### Build Commands — Tell the User, Never Run
 
-**IMPORTANT:** Before running commands or giving platform-specific advice, determine:
+**CRITICAL: Never execute any of these commands yourself. Always instruct the user to run them manually in their terminal.**
 
-1. **Operating System** (check with system info or ask):
-   - **macOS**: Can build and run for **both iOS and Android**
-   - **Windows/Linux**: Can **only build for Android** — iOS requires macOS with Xcode
-   - When on Windows/Linux, never suggest `php artisan native:run ios`, `native:install ios`, or `native:open ios`
-   - **Note:** WSL (Windows Subsystem for Linux) is NOT supported — must run directly on Windows
+| Command | Purpose |
+|---|---|
+| `npm run build -- --mode=ios` | Build frontend assets for iOS |
+| `npm run build -- --mode=android` | Build frontend assets for Android |
+| `php artisan native:run ios` | Compile and run on iOS simulator/device |
+| `php artisan native:run android` | Compile and run on Android emulator/device |
+| `php artisan native:run ios --watch` | Build, deploy, then start hot reload — all in one |
+| `php artisan native:watch` | Hot reload (watch for file changes) |
+| `php artisan native:open` | Open project in Xcode or Android Studio |
 
-2. **Frontend Stack** (examine the codebase):
-   - **Livewire/Blade**: Look for `.blade.php` files with `wire:` directives, Livewire components in `app/Livewire/`
-   - **JavaScript (Vue/React/Inertia)**: Look for `.vue`, `.jsx`, `.tsx` files, `resources/js/` with framework code, `inertiajs` in `package.json`
+**Always ask which platform before giving any build or run command.** If the user hasn't specified iOS or Android, ask: "Which platform do you want to build/test on — iOS or Android?" Never assume a platform.
 
-### Required Environment Variables
+When the platform is confirmed, give the relevant command(s) above and tell the user to run it in their terminal. Do not run it yourself.
+</laravel-boost-guidelines>
 
-**CRITICAL:** Before running `php artisan native:install`, ensure these are set in `.env`:
+=== srwiez/nativephp-mobile-screen rules ===
 
-```dotenv
-NATIVEPHP_APP_ID=com.yourcompany.yourapp
-NATIVEPHP_APP_VERSION="DEBUG"
-NATIVEPHP_APP_VERSION_CODE="1"
+## srwiez/nativephp-mobile-screen
+
+A NativePHP plugin for screen wake lock and brightness control. Perfect for ticketing apps displaying barcodes or scoring apps showing live progress.
+
+### Installation
+
+```bash
+
+# Install the package
+
+composer require srwiez/nativephp-mobile-screen
+
+# Publish the plugins provider (first time only)
+
+php artisan vendor:publish --tag=nativephp-plugins-provider
+
+# Register the plugin
+
+php artisan native:plugin:register srwiez/nativephp-mobile-screen
+
+# Verify registration
+
+php artisan native:plugin:list
 ```
 
-- `NATIVEPHP_APP_ID`: Reverse-domain app identifier (e.g., `com.acme.myapp`) — **required**
-- `NATIVEPHP_APP_VERSION`: Use `"DEBUG"` for development, semantic version (e.g., `"1.0.0"`) for production
-- `NATIVEPHP_APP_VERSION_CODE`: Integer build number for Play Store (increment with each release)
+### PHP Usage (Livewire/Blade)
 
-**Optional but recommended for iOS:**
-```dotenv
-NATIVEPHP_DEVELOPMENT_TEAM=XXXXXXXXXX
+Use the `MobileScreen` facade. All methods return arrays with the result data:
+
+<code-snippet name="Keep Screen Awake" lang="php">
+use SRWieZ\MobileScreen\Facades\MobileScreen;
+
+// Keep screen awake (e.g., when displaying a barcode)
+$result = MobileScreen::keepAwake();
+// $result = ['enabled' => true]
+
+// Allow screen to sleep again
+$result = MobileScreen::allowSleep();
+// $result = ['enabled' => false]
+
+// Check if wake lock is active
+$result = MobileScreen::isAwake();
+$isAwake = $result['awake']; // bool
+</code-snippet>
+
+<code-snippet name="Control Screen Brightness" lang="php">
+use SRWieZ\MobileScreen\Facades\MobileScreen;
+
+// Set brightness to maximum (1.0)
+$result = MobileScreen::setBrightness(1.0);
+// $result = ['success' => true, 'level' => 1.0]
+
+// Set brightness to 50%
+$result = MobileScreen::setBrightness(0.5);
+
+// Get current brightness level
+$result = MobileScreen::getBrightness();
+$level = $result['level']; // float (0.0-1.0) or null
+
+// Reset to system default
+$result = MobileScreen::resetBrightness();
+// $result = ['success' => true]
+</code-snippet>
+
+### Available Methods
+
+| Method | Returns | Description |
+|--------|---------|-------------|
+| `MobileScreen::keepAwake(bool $enabled = true)` | `array{enabled: bool}` | Enable/disable wake lock |
+| `MobileScreen::allowSleep()` | `array{enabled: bool}` | Alias for `keepAwake(false)` |
+| `MobileScreen::isAwake()` | `array{awake: bool}` | Check if wake lock is active |
+| `MobileScreen::setBrightness(float $level)` | `array{success: bool, level: float}` | Set brightness (0.0-1.0) |
+| `MobileScreen::getBrightness()` | `array{level: float\|null}` | Get current brightness |
+| `MobileScreen::resetBrightness()` | `array{success: bool}` | Reset to system default |
+
+### JavaScript Usage (Vue/React/Inertia)
+
+<code-snippet name="Using MobileScreen in JavaScript" lang="javascript">
+import { mobileScreen } from '@srwiez/nativephp-mobile-screen';
+
+// Keep screen awake
+await mobileScreen.keepAwake();
+
+// Set maximum brightness for barcode display
+await mobileScreen.setBrightness(1.0);
+
+// When done, reset everything
+await mobileScreen.resetBrightness();
+await mobileScreen.allowSleep();
+</code-snippet>
+
+### Common Use Cases
+
+<code-snippet name="Barcode Display Component" lang="php">
+use Livewire\Component;
+use SRWieZ\MobileScreen\Facades\MobileScreen;
+
+class BarcodeDisplay extends Component
+{
+    public function mount()
+    {
+        // Keep screen awake and maximize brightness for scanning
+        MobileScreen::keepAwake();
+        MobileScreen::setBrightness(1.0);
+    }
+
+    public function dehydrate()
+    {
+        // Reset when component is destroyed
+        MobileScreen::resetBrightness();
+        MobileScreen::allowSleep();
+    }
+}
+</code-snippet>
+
+### Platform Notes
+
+- **iOS**: Brightness resets automatically when device locks
+- **Android**: Uses window-level brightness (no system permissions required)
+- Both platforms require no special permissions
+
+</laravel-boost-guidelines>
+
+=== srwiez/nativephp-mobile-screen rules ===
+
+## srwiez/nativephp-mobile-screen
+
+A NativePHP plugin for screen wake lock and brightness control. Perfect for ticketing apps displaying barcodes or scoring apps showing live progress.
+
+### Installation
+
+```bash
+
+# Install the package
+
+composer require srwiez/nativephp-mobile-screen
+
+# Publish the plugins provider (first time only)
+
+php artisan vendor:publish --tag=nativephp-plugins-provider
+
+# Register the plugin
+
+php artisan native:plugin:register srwiez/nativephp-mobile-screen
+
+# Verify registration
+
+php artisan native:plugin:list
 ```
-Find your Team ID in your [Apple Developer account](https://developer.apple.com/account) under 'Membership details'.
 
-### PHP Usage (Livewire/Blade Projects)
+### PHP Usage (Livewire/Blade)
 
-Use PHP Facades in the `Native\Mobile\Facades` namespace:
-- `Camera::getPhoto()`, `Dialog::toast()`, `Biometrics::prompt()`, etc.
-- All Facades: `Camera`, `Dialog`, `Biometrics`, `Network`, `SecureStorage`, `File`, `Share`, `Haptics`, `System`, `Device`
-- Note: `Browser`, `Scanner`, `Microphone`, `Geolocation`, and `PushNotifications` are available as separate NativePHP plugins (nativephp/browser, nativephp/scanner, nativephp/microphone, nativephp/geolocation, nativephp/mobile-firebase).
-- Listen for events with `#[OnNative(EventClass::class)]` attribute on Livewire component methods
-- Use EDGE components in Blade templates for native UI (`native:bottom-nav`, `native:top-bar`, `native:side-nav`)
+Use the `MobileScreen` facade. All methods return arrays with the result data:
 
-### JavaScript Usage (Vue/React/Inertia Projects)
+<code-snippet name="Keep Screen Awake" lang="php">
+use SRWieZ\MobileScreen\Facades\MobileScreen;
 
-Import from the NativePHP JavaScript bridge library:
-```javascript
-import { camera, dialog, scanner, biometric, on, Events } from '#nativephp';
-// or individual imports
-import { getPhoto, alert, scanQR } from '#nativephp';
-```
+// Keep screen awake (e.g., when displaying a barcode)
+$result = MobileScreen::keepAwake();
+// $result = ['enabled' => true]
 
-The JS API mirrors the PHP Facades with fluent builders:
-- `await camera.getPhoto()` / `await dialog.alert('Title', 'Message')` / `await scanner.scan()`
-- `await biometric.prompt().id('auth-check')` — fluent builder pattern
-- `await scanner.scan().prompt('Scan ticket').formats(['qr', 'ean13'])`
+// Allow screen to sleep again
+$result = MobileScreen::allowSleep();
+// $result = ['enabled' => false]
 
-Listen for events with `on()` and `off()`:
-```javascript
-import { on, off, Events } from '#nativephp';
-on(Events.Camera.PhotoTaken, (payload) => { /* handle photo */ });
-// Cleanup in unmount: off(Events.Camera.PhotoTaken, handler);
-```
+// Check if wake lock is active
+$result = MobileScreen::isAwake();
+$isAwake = $result['awake']; // bool
+</code-snippet>
 
-### Event Handling (Both Stacks)
+<code-snippet name="Control Screen Brightness" lang="php">
+use SRWieZ\MobileScreen\Facades\MobileScreen;
 
-Asynchronous operations dispatch events to both JavaScript and PHP simultaneously.
+// Set brightness to maximum (1.0)
+$result = MobileScreen::setBrightness(1.0);
+// $result = ['success' => true, 'level' => 1.0]
 
-**Livewire/Blade:**
-```php
-use Native\Mobile\Attributes\OnNative;
-use Native\Mobile\Events\Camera\PhotoTaken;
+// Set brightness to 50%
+$result = MobileScreen::setBrightness(0.5);
 
-#[OnNative(PhotoTaken::class)]
-public function handlePhoto(string $path) { /* ... */ }
-```
+// Get current brightness level
+$result = MobileScreen::getBrightness();
+$level = $result['level']; // float (0.0-1.0) or null
 
-**JavaScript (Vue/React):**
-```javascript
-import { on, Events } from '#nativephp';
-on(Events.Camera.PhotoTaken, ({ path }) => { /* ... */ });
-```
+// Reset to system default
+$result = MobileScreen::resetBrightness();
+// $result = ['success' => true]
+</code-snippet>
 
-Custom events can extend built-in events and be passed via `->event(CustomEvent::class)` (PHP) or `.event('App\Events\Custom')` (JS).
+### Available Methods
 
-### EDGE Components (Native UI)
+| Method | Returns | Description |
+|--------|---------|-------------|
+| `MobileScreen::keepAwake(bool $enabled = true)` | `array{enabled: bool}` | Enable/disable wake lock |
+| `MobileScreen::allowSleep()` | `array{enabled: bool}` | Alias for `keepAwake(false)` |
+| `MobileScreen::isAwake()` | `array{awake: bool}` | Check if wake lock is active |
+| `MobileScreen::setBrightness(float $level)` | `array{success: bool, level: float}` | Set brightness (0.0-1.0) |
+| `MobileScreen::getBrightness()` | `array{level: float\|null}` | Get current brightness |
+| `MobileScreen::resetBrightness()` | `array{success: bool}` | Reset to system default |
 
-- EDGE (Element Definition and Generation Engine) renders Blade components as truly native UI elements.
-- Components use `native:` prefix: `native:bottom-nav`, `native:top-bar`, `native:side-nav`.
-- Child items require unique `id` attributes for lifecycle management.
-- Add `nativephp-safe-area` class to body for proper handling of notches and navigation areas.
-- **Note:** EDGE components are defined in Blade templates and work with both Livewire and Inertia apps (the layout is still Blade).
+### JavaScript Usage (Vue/React/Inertia)
 
-<available-docs>
+<code-snippet name="Using MobileScreen in JavaScript" lang="javascript">
+import { mobileScreen } from '@srwiez/nativephp-mobile-screen';
 
-## Getting Started
+// Keep screen awake
+await mobileScreen.keepAwake();
 
-- [https://nativephp.com/docs/mobile/2/getting-started/introduction] Use these docs for comprehensive introduction to NativePHP Mobile, overview of how PHP runs natively on device, the embedded runtime architecture, and core philosophy behind the package
-- [https://nativephp.com/docs/mobile/2/getting-started/quick-start] Use these docs for rapid setup guide to get your first mobile app running in minutes
-- [https://nativephp.com/docs/mobile/2/getting-started/environment-setup] Use these docs for setting up your development environment including Xcode, Android Studio, simulators, and required dependencies
-- [https://nativephp.com/docs/mobile/2/getting-started/installation] Use these docs for step-by-step installation via Composer, running `php artisan native:install`, platform-specific setup, and ICU support options
-- [https://nativephp.com/docs/mobile/2/getting-started/configuration] Use these docs for detailed configuration guide including NATIVEPHP_APP_ID, NATIVEPHP_APP_VERSION, permissions setup, and config/nativephp.php options
-- [https://nativephp.com/docs/mobile/2/getting-started/development] Use these docs for development workflow including `php artisan native:run`, `native:watch` for hot reload, `native:tail` for logs, and debugging techniques
-- [https://nativephp.com/docs/mobile/2/getting-started/deployment] Use these docs for packaging and deploying apps to App Store and Play Store using `php artisan native:package`
-- [https://nativephp.com/docs/mobile/2/getting-started/versioning] Use these docs for version management, semantic versioning, and `php artisan native:release` command
-- [https://nativephp.com/docs/mobile/2/getting-started/changelog] Use these docs for version history and release notes
-- [https://nativephp.com/docs/mobile/2/getting-started/roadmap] Use these docs for upcoming features and planned improvements
-- [https://nativephp.com/docs/mobile/2/getting-started/support-policy] Use these docs for support policy and compatibility information
+// Set maximum brightness for barcode display
+await mobileScreen.setBrightness(1.0);
 
-## The Basics
+// When done, reset everything
+await mobileScreen.resetBrightness();
+await mobileScreen.allowSleep();
+</code-snippet>
 
-- [https://nativephp.com/docs/mobile/2/the-basics/overview] Use these docs for understanding how NativePHP Mobile works, the bridge between PHP and native code, and the overall architecture
-- [https://nativephp.com/docs/mobile/2/the-basics/events] Use these docs for the complete event system guide including async vs sync operations, event handling in Livewire with `#[OnNative()]`, JavaScript event handling with `Native.on()`, custom events, and the dual dispatch pattern
-- [https://nativephp.com/docs/mobile/2/the-basics/native-functions] Use these docs for understanding the `nativephp_call()` function, the bridge function registry, and how to extend native functionality
-- [https://nativephp.com/docs/mobile/2/the-basics/native-components] Use these docs for overview of native UI components and how they integrate with your app
-- [https://nativephp.com/docs/mobile/2/the-basics/web-view] Use these docs for understanding the web view rendering, JavaScript bridge, and how PHP content is displayed
-- [https://nativephp.com/docs/mobile/2/the-basics/splash-screens] Use these docs for configuring splash screens on iOS and Android
-- [https://nativephp.com/docs/mobile/2/the-basics/app-icon] Use these docs for setting up app icons for both platforms
-- [https://nativephp.com/docs/mobile/2/the-basics/assets] Use these docs for managing static assets, images, and files in your mobile app
+### Common Use Cases
 
-## EDGE Components (Native UI)
+<code-snippet name="Barcode Display Component" lang="php">
+use Livewire\Component;
+use SRWieZ\MobileScreen\Facades\MobileScreen;
 
-- [https://nativephp.com/docs/mobile/2/edge-components/introduction] Use these docs for understanding EDGE (Element Definition and Generation Engine), how Blade components become native UI, server-driven UI approach, and the JSON compilation process
-- [https://nativephp.com/docs/mobile/2/edge-components/bottom-nav] Use these docs for implementing bottom navigation bars with `native:bottom-nav` and `native:bottom-nav-item`, including icons, labels, URLs, and styling
-- [https://nativephp.com/docs/mobile/2/edge-components/top-bar] Use these docs for implementing top app bars with `native:top-bar` and `native:top-bar-action`, including titles, navigation icons, and action buttons
-- [https://nativephp.com/docs/mobile/2/edge-components/side-nav] Use these docs for implementing slide-out navigation drawers with `native:side-nav`, `native:side-nav-item`, `native:side-nav-header`, and `native:side-nav-group`
-- [https://nativephp.com/docs/mobile/2/edge-components/icons] Use these docs for available icon names and how to use icons in EDGE components
+class BarcodeDisplay extends Component
+{
+    public function mount()
+    {
+        // Keep screen awake and maximize brightness for scanning
+        MobileScreen::keepAwake();
+        MobileScreen::setBrightness(1.0);
+    }
 
-## APIs (Device Features)
+    public function dehydrate()
+    {
+        // Reset when component is destroyed
+        MobileScreen::resetBrightness();
+        MobileScreen::allowSleep();
+    }
+}
+</code-snippet>
 
-- [https://nativephp.com/docs/mobile/2/apis/camera] Use these docs for camera operations including `Camera::getPhoto()`, `Camera::recordVideo()`, `Camera::pickImages()`, PhotoTaken and VideoRecorded events
-- [https://nativephp.com/docs/mobile/2/apis/microphone] Use these docs for audio recording with `Microphone::record()`, `->start()`, `->stop()`, `->pause()`, `->resume()`, `->getStatus()`, and MicrophoneRecorded events
-- [https://nativephp.com/docs/mobile/2/apis/scanner] Use these docs for QR code and barcode scanning with `Scanner::scan()`, fluent configuration, CodeScanned events, and supported formats
-- [https://nativephp.com/docs/mobile/2/apis/dialog] Use these docs for native dialogs with `Dialog::alert()`, `Dialog::toast()`, button configuration, and ButtonPressed events
-- [https://nativephp.com/docs/mobile/2/apis/biometrics] Use these docs for Face ID/Touch ID authentication with `Biometrics::prompt()`, fluent API, and Completed events
-- [https://nativephp.com/docs/mobile/2/apis/push-notifications] Use these docs for push notification enrollment with `PushNotifications::enroll()`, `->getToken()`, and TokenGenerated events (requires nativephp/mobile-firebase plugin)
-- [https://nativephp.com/docs/mobile/2/apis/geolocation] Use these docs for location services with `Geolocation::getCurrentPosition()`, `->checkPermissions()`, `->requestPermissions()`, and LocationReceived events
-- [https://nativephp.com/docs/mobile/2/apis/browser] Use these docs for opening URLs with `Browser::open()`, `Browser::inApp()`, `Browser::auth()` for OAuth flows (requires nativephp/browser plugin)
-- [https://nativephp.com/docs/mobile/2/apis/secure-storage] Use these docs for secure credential storage with `SecureStorage::get()`, `->set()`, `->delete()` using device Keychain/KeyStore
-- [https://nativephp.com/docs/mobile/2/apis/share] Use these docs for native share sheet with `Share::url()` and `Share::file()`
-- [https://nativephp.com/docs/mobile/2/apis/file] Use these docs for file operations with `File::move()` and `File::copy()`
-- [https://nativephp.com/docs/mobile/2/apis/network] Use these docs for network status checking with `Network::status()`
-- [https://nativephp.com/docs/mobile/2/apis/haptics] Use these docs for haptic feedback with `Haptics::vibrate()` (prefer `Device::vibrate()`)
-- [https://nativephp.com/docs/mobile/2/apis/device] Use these docs for device information with `Device::getId()`, `->getInfo()`, `->getBatteryInfo()`, `->vibrate()`, `->toggleFlashlight()`
-- [https://nativephp.com/docs/mobile/2/apis/system] Use these docs for platform detection with `System::isIos()`, `System::isAndroid()`, `System::isMobile()`, `System::flashlight()`
+### Platform Notes
 
-## Concepts
+- **iOS**: Brightness resets automatically when device locks
+- **Android**: Uses window-level brightness (no system permissions required)
+- Both platforms require no special permissions
 
-- [https://nativephp.com/docs/mobile/2/concepts/databases] Use these docs for SQLite database usage, local data storage, and when to use local vs API storage
-- [https://nativephp.com/docs/mobile/2/concepts/deep-links] Use these docs for configuring deep links, URL schemes, and universal links
-- [https://nativephp.com/docs/mobile/2/concepts/push-notifications] Use these docs for comprehensive push notification setup including Firebase, APNs, and server-side integration
-- [https://nativephp.com/docs/mobile/2/concepts/security] Use these docs for security best practices, secure storage, and protecting sensitive data
-- [https://nativephp.com/docs/mobile/2/concepts/ci-cd] Use these docs for continuous integration and deployment pipelines for mobile apps
-</available-docs>
+</laravel-boost-guidelines>
 
 === srwiez/nativephp-mobile-screen rules ===
 

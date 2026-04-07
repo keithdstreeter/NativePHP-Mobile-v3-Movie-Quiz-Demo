@@ -13,8 +13,10 @@
     ],
     "sail": false,
     "skills": [
+        "laravel-best-practices",
         "livewire-development",
         "pest-testing",
-        "tailwindcss-development"
+        "tailwindcss-development",
+        "nativephp-mobile"
     ]
 }
