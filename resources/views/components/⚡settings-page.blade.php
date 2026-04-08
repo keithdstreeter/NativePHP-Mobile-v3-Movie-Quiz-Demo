@@ -26,6 +26,8 @@ new #[Title('Settings — Quiz App')] class extends Component
 
     public ?string $avatarUrl = null;
 
+    public ?string $avatarError = null;
+
     public ?int $selectedAgeGroupId = null;
 
     public bool $soundEnabled = true;
@@ -139,6 +141,7 @@ new #[Title('Settings — Quiz App')] class extends Component
 
     public function logout(): void
     {
+        app(AvatarService::class)->clearLocal();
         session()->forget(['auth_token', 'token_verified_at']);
         $this->redirect(route('login'), navigate: true);
     }
@@ -179,8 +182,49 @@ new #[Title('Settings — Quiz App')] class extends Component
     protected function processAvatarFromPath(string $path): void
     {
         $service = app(AvatarService::class);
+        $rawUrl = $service->saveRawTemporary($path);
 
-        $service->saveFromPath($path);
+        $this->dispatch('compress-avatar', url: $rawUrl);
+    }
+
+    public function saveCompressedAvatar(string $data): void
+    {
+        $service = app(AvatarService::class);
+
+        $error = $service->saveFromBase64($data);
+
+        if ($error) {
+            $service->clearLocal();
+            $this->avatarUrl = null;
+            $this->avatarError = $error;
+
+            return;
+        }
+
+        $this->avatarError = null;
+        $this->avatarUrl = $service->avatarUrl();
+        Dialog::toast('Avatar updated');
+    }
+
+    public function saveRawAvatarFallback(): void
+    {
+        $service = app(AvatarService::class);
+
+        $rawPath = Storage::path('avatar_raw.jpg');
+
+        if (! file_exists($rawPath)) {
+            return;
+        }
+
+        $error = $service->saveFromPath($rawPath);
+
+        if ($error) {
+            $this->avatarError = $error;
+
+            return;
+        }
+
+        $this->avatarError = null;
         $this->avatarUrl = $service->avatarUrl();
 
         Dialog::toast('Avatar updated');
@@ -224,7 +268,28 @@ new #[Title('Settings — Quiz App')] class extends Component
 
                         {{-- Avatar --}}
                         <div class="rounded-2xl bg-white/80 backdrop-blur-sm border-2 border-white p-6 animate-fade-in-up"
-                            style="animation-delay: 0.1s">
+                            style="animation-delay: 0.1s"
+                            x-data
+                            @compress-avatar.window="
+                                const img = new Image();
+                                img.onload = () => {
+                                    const maxSize = 400;
+                                    let w = img.width, h = img.height;
+                                    if (w > maxSize || h > maxSize) {
+                                        const ratio = Math.min(maxSize / w, maxSize / h);
+                                        w = Math.round(w * ratio);
+                                        h = Math.round(h * ratio);
+                                    }
+                                    const canvas = document.createElement('canvas');
+                                    canvas.width = w;
+                                    canvas.height = h;
+                                    canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+                                    const base64 = canvas.toDataURL('image/jpeg', 0.75).split(',')[1];
+                                    $wire.saveCompressedAvatar(base64);
+                                };
+                                img.onerror = () => $wire.saveRawAvatarFallback();
+                                img.src = $event.detail.url;
+                            ">
                             <h2 class="text-lg font-semibold text-gray-700 mb-4">Profile Photo</h2>
                             <div class="flex items-center gap-5">
                                 <div class="shrink-0">
@@ -249,6 +314,9 @@ new #[Title('Settings — Quiz App')] class extends Component
                                     </button>
                                 </div>
                             </div>
+                            @if ($avatarError)
+                                <p class="mt-3 text-sm text-candy-500 w-full">{{ $avatarError }}</p>
+                            @endif
                         </div>
 
                         {{-- Username --}}
@@ -288,16 +356,16 @@ new #[Title('Settings — Quiz App')] class extends Component
                                     <button
                                         wire:click="toggleSound"
                                         @class([
-                'relative inline-flex h-8 w-14 items-center rounded-full transition-colors duration-200',
-                'bg-ocean-500' => $soundEnabled,
-                'bg-gray-300' => !$soundEnabled,
-            ])
+                                            'relative inline-flex h-8 w-14 items-center rounded-full transition-colors duration-200',
+                                            'bg-ocean-500' => $soundEnabled,
+                                            'bg-gray-300' => !$soundEnabled,
+                                        ])
                                     >
                                         <span @class([
-                'inline-block h-6 w-6 rounded-full bg-white shadow-sm transition-transform duration-200',
-                'translate-x-7' => $soundEnabled,
-                'translate-x-1' => !$soundEnabled,
-            ])></span>
+                                            'inline-block h-6 w-6 rounded-full bg-white shadow-sm transition-transform duration-200',
+                                            'translate-x-7' => $soundEnabled,
+                                            'translate-x-1' => !$soundEnabled,
+                                        ])></span>
                                     </button>
                                 </div>
                                 <div class="flex items-center justify-between min-h-[44px]">
@@ -305,16 +373,16 @@ new #[Title('Settings — Quiz App')] class extends Component
                                     <button
                                         wire:click="toggleHaptics"
                                         @class([
-                'relative inline-flex h-8 w-14 items-center rounded-full transition-colors duration-200',
-                'bg-ocean-500' => $hapticsEnabled,
-                'bg-gray-300' => !$hapticsEnabled,
-            ])
+                                            'relative inline-flex h-8 w-14 items-center rounded-full transition-colors duration-200',
+                                            'bg-ocean-500' => $hapticsEnabled,
+                                            'bg-gray-300' => !$hapticsEnabled,
+                                        ])
                                     >
                                         <span @class([
-                'inline-block h-6 w-6 rounded-full bg-white shadow-sm transition-transform duration-200',
-                'translate-x-7' => $hapticsEnabled,
-                'translate-x-1' => !$hapticsEnabled,
-            ])></span>
+                                            'inline-block h-6 w-6 rounded-full bg-white shadow-sm transition-transform duration-200',
+                                            'translate-x-7' => $hapticsEnabled,
+                                            'translate-x-1' => !$hapticsEnabled,
+                                        ])></span>
                                     </button>
                                 </div>
                             </div>

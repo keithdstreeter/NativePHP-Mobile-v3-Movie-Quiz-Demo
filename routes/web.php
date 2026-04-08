@@ -9,7 +9,7 @@ Route::livewire('/register', 'register-page')->name('register');
 
 Route::get('/auth/callback', function (Request $request) {
     if ($request->filled('token')) {
-        session(['auth_token' => $request->get('token'), 'token_verified_at' => now()]);
+        session(['auth_token' => $request->get('token')]);
 
         return redirect()->route('home');
     }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Services\AvatarService;
 use Closure;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Request;
@@ -62,6 +63,8 @@ class Authenticated
             if ($response->successful()) {
                 session(['token_verified_at' => now()]);
 
+                $this->syncAvatar($response->json());
+
                 return true;
             }
 
@@ -75,6 +78,11 @@ class Authenticated
 
             return null;
         }
+    }
+
+    private function syncAvatar(array $user): void
+    {
+        app(AvatarService::class)->syncFromRemote($user['avatar_url'] ?? null);
     }
 
     private function clearAuthSession(): void
